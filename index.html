@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Визитка</title>
+    <!-- Подключаем иконки Font Awesome для соцсетей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Анимация/GIF на верху */
+        .avatar-gif {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%; /* Сделать круглым (или уберите эту строку, если гифка должна быть квадратной) */
+            margin-bottom: 24px;
+            /* Небольшое свечение для объема */
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.05));
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #888888;
+            margin-bottom: 32px;
+        }
+
+        /* Список ссылок */
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .link-card i {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Вставьте имя вашего файла с гифкой вместо 'animation.gif' -->
+        <img src="animation.gif" alt="3D Animation" class="avatar-gif">
+
+        <h1 class="title">Ваше Имя / Никнейм</h1>
+        <p class="subtitle">Ваше краткое описание или биография</p>
+
+        <div class="links">
+            <a href="https://instagram.com/ваш_логин" target="_blank" class="link-card">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a href="https://t.me/ваш_логин" target="_blank" class="link-card">
+                <i class="fa-brands fa-telegram"></i>
+                Telegram
+            </a>
+
+            <a href="https://tiktok.com/@ваш_логин" target="_blank" class="link-card">
+                <i class="fa-brands fa-tiktok"></i>
+                TikTok
+            </a>
+            
+            <!-- Дополнительная ссылка (например, Портфолио или GitHub) -->
+            <a href="#" target="_blank" class="link-card">
+                <i class="fa-solid fa-globe"></i>
+                Мой Сайт / Портфолио
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
